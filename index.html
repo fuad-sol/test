@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<style>
+    /* Container with fixed width and centering */
+.container {
+width: 1140px;
+margin: 0 auto; /* Center the container horizontally */
+display: flex;
+}
+
+/* Columns with calculated width */
+.content-column {
+width: calc(50% - (100% - 1442px) / 2);
+box-sizing: border-box;
+background-color: aquamarine;
+}
+
+.image-column {
+
+box-sizing: border-box;
+background-color:blue;
+}
+
+/* Ensure the image covers the full column width */
+.image-column img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+</style>
+
+<div class="container">
+    <div class="column content-column">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, id.</p>
+    </div>
+    <div class="column image-column">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum totam temporibus pariatur. Exercitationem, temporibus amet! Quidem pariatur nostrum quaerat optio.</p>
+    </div>
+</div>
+
+</body>
+</html>
